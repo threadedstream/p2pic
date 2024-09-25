@@ -18,7 +18,7 @@ go build cmd/p2pic/main.go
 
 Apparently, each peer runs in its own terminal
 
-In order to store an image, you need to hit /v1/image/post endpoint, which accepts an image (surprising, huh). Currently, peer responds back once it sent an image to all known peers. The response is hex encoded hash of an image.
+In order to store an image, you need to hit `/v1/image/post` endpoint, which accepts an image (surprising, huh). Currently, peer responds back once it sent an image to all known peers. The response is hex encoded hash of an image.
 
-To check that image's been successfully propagated, try asking other peer for an image by hitting /v1/image/fetch endpoint.
+To check that image's been successfully propagated, try asking other peer for an image by hitting `/v1/image/fetch` endpoint.
 
